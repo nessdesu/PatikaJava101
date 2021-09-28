@@ -1,16 +1,11 @@
 # PatikaJava101
 Kodluyoruz / Patika.dev Java eğitimleri için açmış olduğum repository.
 ---
-⤵️ Pratik 1 - Ortalama Hesaplama
+🟢 Pratik 1 - Ortalama Hesaplama
 
 <details>
 
   '''java
-package com.company;
-
-import java.util.Scanner;
-
-public class Main {
 
     public static void main(String[] args) {
 	// integer değerinde sınav notlarını tanımladık.
