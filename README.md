@@ -1,5 +1,5 @@
 # PatikaJava101
-Kodluyoruz / Patika.dev Java eğitimleri için açmış olduğum repository.
+Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 ---
 🟢 Pratik 1 - Ortalama Hesaplama
 
