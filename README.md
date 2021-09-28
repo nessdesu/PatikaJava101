@@ -5,7 +5,7 @@ Kodluyoruz / Patika.dev Java eğitimleri için açmış olduğum repository.
 
 <details>
 
-  '''java
+  
 
     public static void main(String[] args) {
 	// integer değerinde sınav notlarını tanımladık.
@@ -44,5 +44,5 @@ Kodluyoruz / Patika.dev Java eğitimleri için açmış olduğum repository.
 
     }
 }
-'''
+
 </details>
