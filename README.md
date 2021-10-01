@@ -84,7 +84,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 🟢 Pratik 3 - Hipotenüs Hesaplama ve Üçgenin Alanını Bulma
 	
-	<details>
+<details>
 	public static void main(String[] args) {
 
         double a,b, c, u, alan;
@@ -121,5 +121,5 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
         System.out.print("Üçgenin alanı: " + alan);
   
     }
-	</details>
+</details>
 ---
