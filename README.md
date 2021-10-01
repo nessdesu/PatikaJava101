@@ -81,3 +81,45 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 
 ---
+
+	🟢 Pratik 3 - Hipotenüs Hesaplama ve Üçgenin Alanını Bulma
+	
+	<details>
+	public static void main(String[] args) {
+
+       double a,b, c, u, alan;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Birinci kenar uzunluğu: ");
+        a = input.nextDouble();
+
+        System.out.print("İkinci kenar uzunluğu: ");
+        b = input.nextDouble();
+
+        //(a*a)+(b*b) işleminin karekökünü alarak c'yi hesapladık
+        //formül >> a*a + b*b = c*c
+        c= Math.sqrt((a*a) + (b*b));
+        System.out.print("Hipotenüs uzunluğu: " + c);
+
+        /// üçgenin alanı ///
+        System.out.println("\n"); //bir satır aşağı geçmek için \n kullanılır
+        System.out.println("** Üçgenin Alanı **\n");
+        System.out.print("1. kenar uzunluğu: ");
+        a = input.nextDouble();
+
+        System.out.print("2. kenar uzunluğu: ");
+        b = input.nextDouble();
+
+        System.out.print("3. kenar uzunluğu: ");
+        c = input.nextDouble();
+
+        //alan bulma hesaplamaları
+        u= (a+b+c)/2;
+        alan= Math.sqrt(u*(u-a)*(u-b)*(u-c));
+
+        System.out.println("Üçgenin çevresi: " + u*2);
+        System.out.print("Üçgenin alanı: " + alan);
+  
+    }
+	</details>
+---
