@@ -124,3 +124,26 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 4 - Taksimetre Uygulaması
+
+<details>
+	 public static void main(String[] args) {
+        double baslangic= 10.0, kmBasina=2.20, minTutar=20, toplamTutar, toplamMesafe, odenecekTutar;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Kaç km yol gidildi? ");
+        toplamMesafe = input.nextDouble();
+
+        //toplam tutar hesabi, eğer toplam tutar < 20 ise, minTutar alınacak.
+        //toplam tutar > 20 ise toplamTutar alınacak
+        toplamTutar = (toplamMesafe * kmBasina) + baslangic;
+        boolean flag = toplamTutar < 20;
+        odenecekTutar = flag ? minTutar : toplamTutar;
+
+        System.out.print("Ödenecek tutar: " + odenecekTutar);
+    }
+</details>
+	
+---
