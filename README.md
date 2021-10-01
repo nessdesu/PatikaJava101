@@ -130,6 +130,9 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 🟢 Pratik 4 - Taksimetre Uygulaması
 
 <details>
+	
+	
+	
 	 public static void main(String[] args) {
         double baslangic= 10.0, kmBasina=2.20, minTutar=20, toplamTutar, toplamMesafe, odenecekTutar;
 
@@ -146,6 +149,9 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
         System.out.print("Ödenecek tutar: " + odenecekTutar);
     }
+		
+					
+					
 </details>
 	
 ---
