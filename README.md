@@ -46,3 +46,39 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 }
 
 </details>
+
+🟢 Pratik 2 - KDV Hesaplama
+
+<details>
+ 	
+	package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //değişkenlerimizi double veri tipinde tutuyoruz
+        double tutar, kdvTutari, sonuc, kdvliTutar, kdv1=0.18, kdv2=0.8;
+
+        //kullanıcıdan ana para tutarını alıyoruz
+        Scanner input = new Scanner(System.in);
+        System.out.print("Ana paranızı giriniz: ");
+        tutar = input.nextDouble();
+
+        //koşul ve hesaplama işlemleri
+        boolean flag = tutar>0 && tutar<=1000;
+        sonuc = flag ? kdv1 : kdv2;
+        kdvTutari = tutar*sonuc;
+        kdvliTutar = tutar + kdvTutari;
+        
+        System.out.println("Ana tutar:" + tutar);
+        System.out.println("KDV tutarı:" + kdvTutari );
+        System.out.println("KDVli tutar: " + kdvliTutar);
+
+    }
+}
+
+	
+</details>
