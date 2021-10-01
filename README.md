@@ -50,10 +50,6 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 🟢 Pratik 2 - KDV Hesaplama
 
 <details>
- 	
-	package com.company;
-
-import java.util.Scanner;
 
 public class Main {
 
