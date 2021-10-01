@@ -51,9 +51,8 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 <details>
 
-public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
         //değişkenlerimizi double veri tipinde tutuyoruz
         double tutar, kdvTutari, sonuc, kdvliTutar, kdv1=0.18, kdv2=0.8;
