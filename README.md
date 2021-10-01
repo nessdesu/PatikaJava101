@@ -82,12 +82,12 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 ---
 
-	🟢 Pratik 3 - Hipotenüs Hesaplama ve Üçgenin Alanını Bulma
+🟢 Pratik 3 - Hipotenüs Hesaplama ve Üçgenin Alanını Bulma
 	
 	<details>
 	public static void main(String[] args) {
 
-       double a,b, c, u, alan;
+        double a,b, c, u, alan;
         Scanner input = new Scanner(System.in);
 
         System.out.print("Birinci kenar uzunluğu: ");
