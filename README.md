@@ -47,6 +47,8 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 </details>
 
+---
+
 🟢 Pratik 2 - KDV Hesaplama
 
 <details>
@@ -77,3 +79,5 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 	
 </details>
+
+---
