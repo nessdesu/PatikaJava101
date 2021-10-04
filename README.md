@@ -199,7 +199,9 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 <details>
 
-public static void main(String[] args) {
+	
+	
+      public static void main(String[] args) {
       double boy, kitleEndeksi;
       int kilo;
       Scanner input = new Scanner(System.in);
