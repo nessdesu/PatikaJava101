@@ -194,3 +194,29 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 
 ---
+
+🔵 Ödev 1 - Vücut Kitle İndeksi Hesaplama
+
+<details>
+
+public static void main(String[] args) {
+      double boy, kitleEndeksi;
+      int kilo;
+      Scanner input = new Scanner(System.in);
+
+      System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
+      boy = input.nextDouble();
+
+      System.out.print("Lütfen kilonuzu giriniz : ");
+      kilo = input.nextInt();
+
+      kitleEndeksi = kilo / (boy * boy);
+
+      System.out.print("Vücut kitle indeksiniz: " + kitleEndeksi);
+
+    }
+	
+	
+</details>
+	
+---
