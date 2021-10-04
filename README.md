@@ -155,3 +155,39 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 5 - Daire Çevresi, Alanı ve Daire Diliminin Alanı Hesaplama  
+	
+	<details> 
+	
+		
+		 public static void main(String[] args) {
+        double r, cevre, alan, aci, dilimAlani;
+        double PI = 3.14;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Yarı çap uzunluğunu giriniz: ");
+        r= input.nextDouble();
+
+        cevre = 2*PI*r;
+        alan = PI*r*r;
+
+        System.out.print("Dairenin çevresi: " + cevre +"\n");
+        System.out.print("Dairenin alanı: " + alan + "\n");
+
+        //Yarıçapı r, merkez açısının ölçüsü a olan daire diliminin alanı
+
+        System.out.print("Daire diliminin alanını bulabilmek için, dairenin yarı çapını giriniz: ");
+        r = input.nextDouble();
+        System.out.print("Dairenin merkez açısını giriniz: ");
+        aci= input.nextDouble();
+
+        dilimAlani = (PI * Math.pow(r,2) * aci) / 360;
+        System.out.print("Daire diliminin alanı: " + dilimAlani);
+
+    }
+		
+		
+	</details>
+
+---
