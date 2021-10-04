@@ -158,10 +158,11 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	
 🟢 Pratik 5 - Daire Çevresi, Alanı ve Daire Diliminin Alanı Hesaplama  
 	
-	<details> 
+<details> 
 	
 		
-		 public static void main(String[] args) {
+	
+	public static void main(String[] args) {
         double r, cevre, alan, aci, dilimAlani;
         double PI = 3.14;
         Scanner input = new Scanner(System.in);
@@ -187,7 +188,9 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
     }
 		
-		
-	</details>
+	
+	
+	
+</details>
 
 ---
