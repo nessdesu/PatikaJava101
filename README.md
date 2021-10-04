@@ -156,7 +156,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	
 ---
 	
-🟢 Pratik 5 - Daire Çevresi, Alanı ve Daire Diliminin Alanı Hesaplama  
+🟢 Pratik 5 - Daire Çevresi, Alanı ve Daire Diliminin Alanını Hesaplama  
 	
 <details> 
 	
