@@ -222,3 +222,45 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+	
+🔵 Ödev 2 - Manav Kasa Programı
+	
+<details>
+
+	
+	    public static void main(String[] args) {
+		double armut = 2.14, armutToplam, elma = 3.67, elmaToplam, domat = 1.11, domatToplam,
+			muz = 0.95, muzToplam, patlican = 5.00, patlicanToplam, toplamTutar;
+		double kilo;
+
+		Scanner input =new Scanner(System.in);
+
+		System.out.print("Armut kaç kilo? ");
+		kilo = input.nextDouble();
+		armutToplam = kilo * armut;
+
+		System.out.print("Elma kaç kilo? ");
+		kilo = input.nextDouble();
+		elmaToplam = kilo * elma;
+
+		System.out.print("Domates kaç kilo? ");
+		kilo = input.nextDouble();
+		domatToplam = kilo * domat;
+
+		System.out.print("Muz kaç kilo? ");
+		kilo = input.nextDouble();
+		muzToplam = kilo * muz;
+
+		System.out.print("Patlıcan kaç kilo? ");
+		kilo = input.nextDouble();
+		patlicanToplam = kilo * patlican;
+
+		toplamTutar = armutToplam + elmaToplam + domatToplam + muzToplam + patlicanToplam;
+
+		System.out.print("Toplam Tutar: " + toplamTutar);
+
+	
+</details>	
+	
+---	
