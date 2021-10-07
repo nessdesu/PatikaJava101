@@ -362,3 +362,79 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>	
 	
 ---	
+	
+🟢 Pratik 8 - Sınıfı Geçme Durumu
+
+<details>
+	
+
+	public static void main(String[] args) {
+        int mat, fizik, turkce, kimya, muzik;
+        double toplam, ortalama = 0;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Matematik notunuz: ");
+        mat = input.nextInt();
+
+        System.out.print("Fizik notunuz: ");
+        fizik = input.nextInt();
+
+        System.out.print("Türkçe notunuz: ");
+        turkce = input.nextInt();
+
+        System.out.print("Kimya notunuz: ");
+        kimya = input.nextInt();
+
+        System.out.print("Müzik notunuz: ");
+        muzik = input.nextInt();
+
+
+        if (mat == 0) {
+            toplam = fizik + turkce + kimya + muzik;
+            ortalama = toplam / 4;
+            if (ortalama <= 55) {
+                System.out.print("Başarısız oldunuz. Sınıf tekrarı yapmalısınız");
+            } else {
+                System.out.print("Sınıfı başarıyla geçtiniz. Tebrikler!");
+            }
+        } else if (fizik == 0) {
+            toplam = mat + turkce + kimya + muzik;
+            ortalama = toplam / 4;
+            if (ortalama <= 55) {
+                System.out.print("Başarısız oldunuz. Sınıf tekrarı yapmalısınız");
+            } else {
+                System.out.print("Sınıfı başarıyla geçtiniz. Tebrikler!");
+            }
+
+        } else if (turkce == 0) {
+            toplam = mat + fizik + kimya + muzik;
+            ortalama = toplam / 4;
+            if (ortalama <= 55) {
+                System.out.print("Başarısız oldunuz. Sınıf tekrarı yapmalısınız");
+            } else {
+                System.out.print("Sınıfı başarıyla geçtiniz. Tebrikler!");
+            }
+        } else if (kimya == 0) {
+            toplam = mat + turkce + fizik + muzik;
+            ortalama = toplam / 4;
+            if (ortalama <= 55) {
+                System.out.print("Başarısız oldunuz. Sınıf tekrarı yapmalısınız");
+            } else {
+                System.out.print("Sınıfı başarıyla geçtiniz. Tebrikler!");
+            }
+        } else if (muzik == 0) {
+            toplam = mat + turkce + kimya + fizik;
+            ortalama = toplam / 4;
+            if (ortalama <= 55) {
+                System.out.print("Başarısız oldunuz. Sınıf tekrarı yapmalısınız");
+            } else {
+                System.out.print("Sınıfı başarıyla geçtiniz. Tebrikler!");
+            }
+        }
+        
+    }
+	
+</details>
+
+	
+---
