@@ -301,3 +301,64 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 7 - Kullanıcı Girişi
+	
+<details>
+	
+	
+	   public static void main(String[] args) {
+        //Bizim belirlediğimiz kullanıcı adı ve şifre
+        String userName = "patika", password = "java123", newPassword;
+
+        //Yanlış şifre girildikten sonra E/H seçimi yapabilmek için
+        char choice;
+
+        //Kullanıcıdan aldığımız bu değer ile userName ve password değişkenlerimizin değerlerinin eşit olup olmadığını kontrol edeceğiz
+        String nickName, password2;
+
+        //Kullanıcı adı ve şifre kontrolü için oluşturduğumuz boolean değerler
+        boolean flag1, flag2;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kullanıcı adınızı giriniz: ");
+        nickName = input.nextLine();
+
+        System.out.print("Şifrenizi giriniz: ");
+        password2 = input.nextLine();
+
+        //nickName değeri ile userName değeri birbirine eşit ve flag1 true döndürüyor
+        flag1 = nickName.equals(userName);
+
+        //password2 değeri ile password değeri birbirine eşit ve flag2 true döndürüyor
+        flag2 = password2.equals(password);
+
+        if (flag1 && flag2) {
+            System.out.println("Giriş başarılı!");
+        }
+        //eğer flag2 false ise, yani girilen şifre yanlışsa else bloğunun içine girerek işlemeri yaptırıyoruz.
+        if ((!flag2)) {
+            System.out.println("Şifreniz yanlış. Sıfırlamak için 'E' programdan çıkmak için 'H' tuşlayınız.");
+            choice = input.next().charAt(0);
+            if (choice == 'E') {
+                System.out.print("Yeni şifre: ");
+                newPassword = input.next();
+                if (newPassword.equals(password)) {
+                    System.out.print("Şifre eski şifre ile aynı olmamalıdır.");
+                } else {
+                    System.out.print("Şifre oluşturuldu!");
+                }
+            } else {
+                System.out.print("Şifre oluşturulamadı.");
+            }
+
+        } 
+        //Eğer kullanıcı adı yanlış girilmişse, bu işlem yapılır
+        else if ((!flag1)) {
+            System.out.println("Kullanıcı adı yanlış!");
+        }
+    }
+	
+</details>	
+	
+---	
