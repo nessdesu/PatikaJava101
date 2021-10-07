@@ -264,3 +264,40 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>	
 	
 ---	
+	
+🟢 Pratik 6 - Hesap Makinesi 
+	
+<details>
+	
+	
+	 public static void main(String[] args) {
+		int num1, num2, choice;
+
+		Scanner input = new Scanner(System.in);
+		System.out.print("1. Sayı: ");
+		num1 = input.nextInt();
+		System.out.print("2. Sayı: ");
+		num2 = input.nextInt();
+
+		System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme\n");
+		System.out.print("Seçiminizi yapınız.");
+		choice = input.nextInt();
+		switch (choice){
+		    case 1:
+			System.out.print("Toplam: " + (num1+num2));
+			break;
+		    case 2:
+			System.out.print("Fark: " + (num1-num2));
+			break;
+		    case 3:
+			System.out.print("Çarpım: "+ (num1*num2));
+			break;
+		    case 4:
+			System.out.print("Bölüm: " + (num1/num2));
+			break;
+		    default: System.out.println("Geçersiz bir değer girdiniz.");
+        }
+	
+</details>
+	
+---
