@@ -435,6 +435,46 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
     }
 	
 </details>
-
 	
 ---
+
+
+🟢 Pratik 9 - Hava Sıcaklığına Göre Etkinlik Önerme
+	
+<details>
+
+	 public static void main(String[] args) {
+
+        //Kullanıcıdan alacağımız sıcaklık bilgisi
+        int heat;
+        
+        //Sıcaklık aralıklarını kontrol edebilmek için boolean değerlerimiz
+        boolean flag1, flag2, flag3;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Hava sıcaklığını giriniz: ");
+        heat = input.nextInt();
+
+        // heat <=5 ise true
+        flag1 = heat <= 5;
+        // heat>5 && heat<=15 ise true
+        flag2 = heat > 5 && heat <= 15;
+        // heat>15 && heat<=25 ise true
+        flag3 = heat > 15 && heat <= 25;
+
+        if (flag1) {
+            System.out.println("Kayak yapmaya gidebilirsiniz.");
+        } else if (flag2) {
+            System.out.println("Sinemaya gidebilirsiniz.");
+        } else if (flag3) {
+            System.out.println("Pikniğe gidebilirsiniz.");
+        } else {
+            System.out.println("Yüzmeye gidebilirsiniz.");
+        }
+
+    }
+	
+	
+	
+</details>
