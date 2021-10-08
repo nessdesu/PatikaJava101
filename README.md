@@ -476,5 +476,76 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
     }
 	
 	
-	
+
 </details>
+	
+---
+
+🟢 Pratik 10 - Sayıları Büyükten Küçüğe ve Küçükten Büyüğe Sıralama
+	
+<details
+	 
+	public static void main(String[] args) {
+        int a, b, c;
+        //büyükten küçüğe sıralama
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        a = input.nextInt();
+        System.out.print("Bir sayı giriniz: ");
+        b = input.nextInt();
+        System.out.print("Bir sayı giriniz: ");
+        c = input.nextInt();
+        if (a < b && a < c) {
+            if (b > c) {
+                System.out.println("Sıralama: " + a + " " + b + " " + c);
+            } else {
+                System.out.println("Sıralama: " + a + " " + c + " " + b);
+            }
+        } else if ((b > a) && (b > c)) {
+            if (a > c) {
+                System.out.println("Sıralama: " + b + " " + a + " " + c);
+            } else {
+                System.out.println("Sıralama: " + b + " " + c + " " + a);
+            }
+        } else if (c > a && c > b) {
+            if (a > b) {
+                System.out.println("Sıralama: " + c + " " + a + " " + b);
+            } else {
+                System.out.println("Sıralama: " + c + " " + b + " " + a);
+            }
+        }
+
+        ///Küçükten büyüğe sıralama
+        boolean flag1, flag2, flag3, flag4, flag5, flag6;
+        //a<b<c
+        flag1 = a < b && a < c && b < c;
+        //a<c<b
+        flag2 = a < b && a < c && c < b;
+        //b<a<c
+        flag3 = b < a && b < c && a < c;
+        //b<c<a
+        flag4 = b < a && b < c && c < a;
+        //c<a<b
+        flag5 = c < a && c < b && a < b;
+        //c<b<a
+        flag6 = c < a && c < b && b < a;
+
+        if (flag1) {
+            System.out.println("a < b < c");
+        } else if (flag2) {
+            System.out.println("a < c < b");
+        } else if (flag3) {
+            System.out.println("b < a < c");
+        } else if (flag4) {
+            System.out.println("b < c < a");
+        } else if (flag5) {
+            System.out.println("c < a < b");
+        } else {
+            System.out.println("c < b < a");
+        }
+
+    } 
+	 
+	
+<details>
