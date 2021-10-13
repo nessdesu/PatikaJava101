@@ -516,18 +516,24 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
             }
         }
 
-        ///Küçükten büyüğe sıralama
+        // Küçükten büyüğe sıralama
         boolean flag1, flag2, flag3, flag4, flag5, flag6;
-        //a<b<c
+        
+	// a<b<c
         flag1 = a < b && a < c && b < c;
-        //a<c<b
+        
+	// a<c<b
         flag2 = a < b && a < c && c < b;
-        //b<a<c
+        
+	//b<a<c
         flag3 = b < a && b < c && a < c;
-        //b<c<a
+        
+	//b<c<a
         flag4 = b < a && b < c && c < a;
+	
         //c<a<b
         flag5 = c < a && c < b && a < b;
+					
         //c<b<a
         flag6 = c < a && c < b && b < a;
 
@@ -549,6 +555,8 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	 
 	
 </details>
+
+---
 	
 	
 🟢 Pratik 11 - Burç Bulan Program
