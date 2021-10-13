@@ -485,6 +485,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	
 <details
 	 
+	 
 	public static void main(String[] args) {
         int a, b, c;
         //büyükten küçüğe sıralama
@@ -552,6 +553,8 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
         }
 
     } 
+	
+	
 	 
 	
 </details>
