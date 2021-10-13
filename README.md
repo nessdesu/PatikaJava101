@@ -548,7 +548,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
     } 
 	 
 	
-<details>
+</details>
 	
 	
 🟢 Pratik 11 - Burç Bulan Program
