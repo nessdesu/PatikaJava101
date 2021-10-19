@@ -761,3 +761,44 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+
+	
+🟢 Pratik 12 - Girilen Sayıya Kadar Olan Çift Sayıları Bulan Program
+
+<details>
+	
+
+	public static void main(String[] args) {
+
+        int number, i, j = 0, sum = 0, average = 0;
+        Scanner input = new Scanner(System.in);
+
+        //Girilen sayıya kadar olan çift sayılar
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
+        for (i=1; i<number; i++){
+            if(i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+        
+        //3 ve 4 ile bölünen sayıların ortalamasını yazdıran program
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
+        for (i = 0; i <= number; i++) {
+            if ((i % 3 == 0) & (i % 4 == 0)) {
+                System.out.println(i);
+                j++;
+                sum += i;
+            }
+        }
+
+        average = sum / j;
+        System.out.println("Average: " + average);
+         
+
+    }
+	
+</details>
+	
+---	
