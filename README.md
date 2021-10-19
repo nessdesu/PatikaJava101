@@ -846,17 +846,20 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
         System.out.print("Bir sayı giriniz: ");
         num = input.nextInt();
-      /*  for(i=1; i<=num;i*=2){
+	
+	
+	System.out.println("***2'NIN KUVVETLERİ***");
+        for(i=1; i<=num;i*=2){
 
             System.out.println(i);
-        }*/
-
-        for (i = 1; i <= num; i++) {
-            // EKOK(4,5) = 20 ancak if(i%4==0 && i%5==0) şeklinde de yapılabilir.
-            if (i % 20 == 0) {
-                System.out.println(i);
-            }
-
+        }
+	System.out.println("***4'UN KUVVETLERİ***");
+        for (i = 1; i <= num; i *= 4) {
+            System.out.println(i);
+        }
+        System.out.println("***5'IN KUVVETLERİ***");
+        for (i = 1; i <= num; i *= 5) {
+            System.out.println(i);
         }
     }
 	
