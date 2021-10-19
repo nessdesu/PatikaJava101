@@ -836,7 +836,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	
 ---
 
-🟢 Pratik 14 - Girilen Sayıdan Küçün 2'nin Katlarını Bulan Program
+🟢 Pratik 14 - Girilen Sayıdan Küçük 2'nin Kuvvetlerini Bulan Program
 	
 <details>
 	
