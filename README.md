@@ -727,3 +727,37 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 	
 ---
+	
+🔵 Ödev 5 - Artık Yıl Hesaplama
+	
+<details>
+	
+	 public static void main(String[] args) {
+        int yil;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Yıl giriniz: ");
+
+        yil = input.nextInt();
+
+        if (yil % 4 == 0) {
+            if (yil % 100 == 0) {
+                if (yil % 400 == 0) {
+                    System.out.println(yil + "Bir artık yıldır!");
+                } else {
+                    System.out.println(yil + "Bir artık yıl değildir!");
+                }
+            } else {
+                System.out.println(yil + "Bir artık yıldır!");
+            }
+        } else {
+            System.out.println(yil + "Bir artık yıl değildir!");
+        }
+
+
+    }
+	
+</details>
+	
+---
