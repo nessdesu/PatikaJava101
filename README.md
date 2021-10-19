@@ -835,3 +835,31 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+
+🟢 Pratik 14 - Girilen Sayıdan Küçün 2'nin Katlarını Bulan Program
+	
+<details>
+	
+	public static void main(String[] args) {
+        int i, num;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Bir sayı giriniz: ");
+        num = input.nextInt();
+      /*  for(i=1; i<=num;i*=2){
+
+            System.out.println(i);
+        }*/
+
+        for (i = 1; i <= num; i++) {
+            // EKOK(4,5) = 20 ancak if(i%4==0 && i%5==0) şeklinde de yapılabilir.
+            if (i % 20 == 0) {
+                System.out.println(i);
+            }
+
+        }
+    }
+	
+</details>
+	
+---
