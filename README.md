@@ -670,3 +670,60 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🔵 Ödev 4 - Çin Zodyağı Hesaplama
+
+<details>
+	
+	
+	   public static void main(String[] args) {
+        int date;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please enter your birth year: ");
+        date = input.nextInt();
+
+        if(date % 12 == 0){
+            System.out.println("Monkey");
+        }
+        else if(date % 12 == 1){
+            System.out.println("Your Chinese Horoscop: Rooster");
+        }
+        else if(date % 12 == 2){
+            System.out.println("Your Chinese Horoscop: Dog");
+        }
+        else if(date % 12 == 3){
+            System.out.println("Your Chinese Horoscop: Pig");
+        }
+        else if(date % 12 == 4){
+            System.out.println("Your Chinese Horoscop: Mouse");
+        }
+        else if(date % 12 == 5){
+            System.out.println("Your Chinese Horoscop: Ox");
+        }
+        else if(date % 12 == 6){
+            System.out.println("Your Chinese Horoscop: Tiger");
+        }
+        else if(date % 12 == 7){
+            System.out.println("Your Chinese Horoscop: Rabbit");
+        }
+        else if(date % 12 == 8){
+            System.out.println("Your Chinese Horoscop: Dragon");
+        }
+        else if(date % 12 == 9){
+            System.out.println("Your Chinese Horoscop: Snake");
+        }
+        else if(date % 12 == 10){
+            System.out.println("Your Chinese Horoscop: Horse");
+        }
+        else if(date % 12 == 11){
+            System.out.println("Your Chinese Horoscop: Sheep");
+        }
+
+    }
+	
+	
+</details>	
+
+	
+---
