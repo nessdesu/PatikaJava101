@@ -98,7 +98,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
         System.out.print("İkinci kenar uzunluğu: ");
         b = input.nextDouble();
 
-        //(a*a)+(b*b) işleminin karekökünü alarak c'yi hesapladık
+        //(a*a)+(b*b) işleminin karekökünü alarak c'yi hesapladık 
         //formül >> a*a + b*b = c*c
         c= Math.sqrt((a*a) + (b*b));
         System.out.print("Hipotenüs uzunluğu: " + c);
