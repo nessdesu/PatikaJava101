@@ -620,3 +620,53 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 
 ---
+
+🔵 Ödev 3 - Uçak Bileti Fiyatı Hesaplama
+
+<details>
+
+	   public static void main(String[] args) {
+        int distance, type, age;
+        double distanceM = 0.10, ageDiscount = 0, totalM, typeDiscount, ticketM;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Km bilgisi: ");
+        distance = input.nextInt();
+
+        totalM = distance * distanceM;
+
+        System.out.println("Yaş bilgisi: ");
+        age = input.nextInt();
+        if (age < 12) {
+            ageDiscount = totalM * 0.50;
+        } else if (age >= 12 && age <= 24) {
+            ageDiscount = totalM * 0.10;
+        } else if (age > 65) {
+            ageDiscount = totalM * 0.30;
+        }
+        ticketM = totalM - ageDiscount;
+
+        System.out.println("1- Tek yön için 1 tuşlayın\n2- Gdişi- dönüş için 2 tıklayın");
+        type = input.nextInt();
+
+        switch (type) {
+            case 1:
+                typeDiscount = totalM * 0;
+                ticketM = (totalM - typeDiscount);
+                System.out.println("Bilet Ücreti: " + ticketM);
+                break;
+            case 2:
+                typeDiscount = totalM * 0.20;
+                ticketM = 2*(totalM - typeDiscount);
+                System.out.println("Bilet Ücreti: " + ticketM);
+                break;
+            default:
+                System.out.println("Yanlış değer girdiniz");
+        }
+    }
+	
+	
+</details>
+	
+---
