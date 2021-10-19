@@ -803,7 +803,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	
 ---	
 	
-🟢 Pratik 14 - Tek Sayıların Toplamını Bulan Program
+🟢 Pratik 13 - Tek Sayıların Toplamını Bulan Program
 	
 <details>
 	
