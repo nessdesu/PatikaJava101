@@ -802,3 +802,36 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---	
+	
+🟢 Pratik 14 - Tek Sayıların Toplamını Bulan Program
+	
+<details>
+	
+	public static void main(String[] args) {
+        int sum = 0, num;
+        Scanner input = new Scanner(System.in);
+        //tek sayıları bulup toplayan program
+      /*  do {
+            System.out.print("Bir sayı giriniz: ");
+            num = input.nextInt();
+            if (num % 2 == 1) {
+                sum += num;
+            }
+
+        } while (num > 0);
+        System.out.println("Toplam: " + sum);*/
+        
+        //tek sayı girilene kadar, girilen sayılardan çift ve 4ün katı olan sayıları bulup, toplayan program
+        do {
+            System.out.print("Bir sayı giriniz: ");
+            num = input.nextInt();
+            if (num % 2 == 0 && num % 4 == 0) {
+                sum += num;
+            }
+        } while (num % 2 == 0);
+        System.out.println("Toplam: " + sum);
+    }
+	
+</details>
+	
+---
