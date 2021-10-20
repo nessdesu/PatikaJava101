@@ -866,3 +866,44 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 15 - Faktöriyel ve Kombinasyon Hesabı Yapan Program
+	
+<details>
+	
+
+	public static void main(String[] args) {
+
+        int n, r, num, i, j, k, facN = 1, facR = 1, facK = 1, total = 1;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Faktöriyelinin hesaplanmasını istediğiniz sayıyı giriniz: ");
+        num = input.nextInt();
+
+        for (i = num; i >= 1; i--) {
+            total *= i;
+        }
+        System.out.println("Faktöriyel: " + total);
+
+
+        System.out.print("Kombinasyon hesaplaması için n değerini giriniz: ");
+        n = input.nextInt();
+        System.out.print("Kombinasyon hesaplaması için r değerini giriniz: ");
+        r = input.nextInt();
+
+        for (i = n; i >= 1; i--) {
+            facN *= i;
+        }
+        for (j = r; j >= 1; j--) {
+            facR *= j;
+        }
+        for (k = (n - r); k >= 1; k--) {
+            facK *= k;
+        }
+        total = facN / (facR * facK);
+        System.out.println("Kombinasyon: " + total);
+    }
+	
+</details>
+	
+---
