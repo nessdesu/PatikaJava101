@@ -907,3 +907,27 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 16 - Üslü Sayı Hesaplayan Program
+	
+<details>
+	
+	int n, e, i, us=1;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Üssü alınacak sayıyı giriniz: ");
+        n = input.nextInt();
+
+        System.out.print("Üs olacak sayıyı giriniz: ");
+        e = input.nextInt();
+
+        for(i=e; i>=1; i--){
+            us *=n;
+        }
+        System.out.println("Sonuç : " + us);
+
+    }
+	
+</details>
+	
+---
