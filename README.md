@@ -931,3 +931,54 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 17 - Armstrong Sayıları Bulan Program
+
+<details>
+	
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        int num, basamakSayisi = 0, basamakValue, basamakUs,sonuc=0;
+        num = input.nextInt();
+        int tempNum = num;
+
+        //girilen sayının kaç basamaklı olduğunu bulduk
+        while (tempNum != 0) {
+            tempNum /= 10;
+            basamakSayisi++;
+
+        }
+
+        tempNum = num;
+
+        //sayının basamaklarındaki rakamları aldık ve üs işlemlerini yaptık
+        while (tempNum != 0) {
+
+            basamakValue = tempNum % 10;
+            basamakUs=1;
+            for(int i=1; i<=basamakSayisi; i++){
+                basamakUs *= basamakValue;
+            }
+            sonuc += basamakUs;
+            tempNum /=10;
+
+        }
+
+        if(sonuc==num){
+            System.out.println("Bu sayı Armstrong sayıdır! " + num);
+        }
+        else{
+            System.out.println("Bu sayı Armstrong sayı değildir! " + num);
+        }
+
+
+    }
+	
+	
+	
+	
+</details>
+
+	
+---
