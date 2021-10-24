@@ -1008,3 +1008,43 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+	
+🟢 Pratik 19 - Yıldızlar İle Üçgen Yapımı
+	
+<details>
+	
+	public static void main(String[] args) {
+        int num;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir değer giriniz: ");
+
+        num = input.nextInt();
+
+        //i= basamak sayısı; k=sol baştan bırakılacak boşluk sayısı
+        for (int i = 0; i <= num; i++) {
+            for (int k = 0; k < (num - i); k++) {
+                System.out.print(" ");
+            }
+            //j= ekrana basılacak * sayısı
+            for (int j = 1; j <= (2 * i + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println("  ");
+        }
+
+        //i=basamak sayısı
+        for (int i = num; i > 0; i--) {
+            //k=sol baştan bırakılacak boşluk sayısı
+            for (int k = (num - i); k >= 0; k--) {
+                System.out.print(" ");
+            }
+            //ekrana basılacak yıldız sayısı j
+            for (int j = (2 * i - 2); j >= 0; j--) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+    }
+	
+</details>
