@@ -1242,3 +1242,31 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 	
 ---
+
+🔵 Ödev 9 - 1-100 Arası Asal Sayılar
+	
+<details>
+	
+public static void main(String[] args) {
+
+        int flag = 0;
+        for (int i = 1; i <= 100; i++) {
+            for (int k = 1; k <= i; k++) {
+                if (i % k == 0) {
+                    flag++;
+                }
+            }
+            if (flag == 2) {
+                System.out.println(i);
+                flag = 0;
+            } else {
+                flag = 0;
+            }
+        }
+
+    }
+	
+	
+</details>
+	
+---
