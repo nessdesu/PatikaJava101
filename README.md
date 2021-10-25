@@ -1270,3 +1270,32 @@ public static void main(String[] args) {
 </details>
 	
 ---
+	
+🔵 Ödev 10 - Fibınacci Serisi
+	
+<details>
+	
+	public static void main(String[] args) {
+
+        int num1 = 0, num2 = 1;
+        int total = num1 + num2;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kaç adet fibonacci sayısı görmek istiyorsunuz? ");
+        int value = input.nextInt();
+
+        System.out.print(num1 + "  " + num2);
+        while (value > 0) {
+            System.out.print(total + " ");
+            value--;
+            num1 = num2;
+            num2 = total;
+            total = num1 + num2;
+        }
+
+    }
+	
+	
+</details>
+	
+---
