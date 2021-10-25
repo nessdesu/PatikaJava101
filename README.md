@@ -1119,7 +1119,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 <details>
 	
 	
-	 public static void main(String[] args) {
+	public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("n1 sayısını giriniz: ");
         int n1 = input.nextInt();
@@ -1152,10 +1152,11 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
     }
 	
-/details>
+</details>
 	
-	---
+---
 
+	
 🔵 Ödev 6 - Girilen Sayılardan Maksimum ve Minimum Olanları Bulma
 	
 <details>
