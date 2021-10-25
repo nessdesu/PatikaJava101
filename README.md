@@ -1188,3 +1188,30 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 		
 ---
+	
+🔵 Ödev 7 - Mükemmel Sayı Bulan Program
+	
+<details>
+	
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        int num = input.nextInt();
+        int total = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                total += i;
+            }
+        }
+        if (total == num) {
+            System.out.println(num + " Bir mükemmel sayıdır!");
+        } else {
+            System.out.println(num + " Bir mükemmel sayı değildir!");
+        }
+    }
+	
+	
+	
+</details>
+
+---
