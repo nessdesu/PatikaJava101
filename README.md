@@ -1152,6 +1152,38 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
     }
 	
-	</details>
+/details>
 	
 	---
+
+🔵 Ödev 6 - Girilen Sayılardan Maksimum ve Minimum Olanları Bulma
+	
+<details>
+	
+	
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int max = 0, min = 0, num, adet;
+        System.out.print("Kaç adet sayı girececeksiniz: ");
+        adet = input.nextInt();
+        for (int i = 1; i <= adet; i++) {
+            System.out.print(i + ". Sayıyı giriniz: ");
+            num = input.nextInt();
+            if (i == 1) {
+                max = num;
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
+            if (num < min) {
+                min = num;
+            }
+        }
+        System.out.println("En büyük sayı: " + max);
+        System.out.println("En küçün sayı: " + min);
+    }
+	
+</details>
+		
+---
