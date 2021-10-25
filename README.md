@@ -1215,3 +1215,30 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 </details>
 
 ---
+	
+🔵 Ödev 8 - Ters Üçgen Yapımı
+	
+<details>
+	
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Basamak sayısını giriniz: ");
+        int num = input.nextInt();
+        int i, j;
+        //basamak sayısı
+        for (i = num; i >= 1; i--) {
+            //bırakılacak boşluk sayısı
+            for (j = (num - i); j >= 0; j--) {
+                System.out.print(" ");
+            }
+            //basılacak yıldız sayısı
+            for (int k = (2 * i - 1); k >= 1; k--) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+	
+</details>
+	
+---
