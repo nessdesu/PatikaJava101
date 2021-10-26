@@ -1299,3 +1299,35 @@ public static void main(String[] args) {
 </details>
 	
 ---
+	
+🟢 Pratik 22 - Palindrom Sayılar
+	
+<details>
+	
+	static boolean isPalindorm(int number) {
+        int temp = number, reversedNumber = 0, lastNumber;
+        while (temp != 0) {
+            lastNumber = temp % 10;
+            reversedNumber = (reversedNumber * 10) + lastNumber;
+            temp /= 10;
+        }
+        if (number == reversedNumber) {
+            System.out.println("Palindrom Sayı");
+        } else {
+            System.out.println("Palindorm sayı değil.");
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        int num = input.nextInt();
+        isPalindorm(num);
+
+    }
+	
+	
+<details>
+
+---
