@@ -1328,6 +1328,30 @@ public static void main(String[] args) {
     }
 	
 	
-<details>
+</details>
 
+---
+
+🟢 Pratik 23 - Recursive ile Fibonacci Serisi
+	
+<details>
+	
+	static int fib(int n) {
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        return fib(n - 1) + fib(n - 2);
+    }
+
+
+    	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Fibonacci serisi elaman sayısı: ");
+        int num = input.nextInt();
+        System.out.print(fib(num));
+
+    }
+	
+</details>
+	
 ---
