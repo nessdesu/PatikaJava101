@@ -1547,10 +1547,39 @@ public static void main(String[] args) {
 
     }
 
-
-
 	
 	
 </details>
 
+---
+	
+🟢 Pratik 25 - Recursive Method ile Üs Hesabı Yapan Program
+	
+<details>
+	
+	
+	 static int power(int base, int power) {
+       	 if (power != 0) {
+            	return base * power(base, power - 1);
+         } else {
+            	return 1;
+        	}
+    	 }
+
+    	public static void main(String[] args) {
+		int base, power;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Taban sayısı: ");
+		base = input.nextInt();
+
+		System.out.print("Üs sayısı: ");
+		power = input.nextInt();
+
+		System.out.println("Sonuç: " + power(base, power));
+
+    }
+
+	
+</details>
+	
 ---
