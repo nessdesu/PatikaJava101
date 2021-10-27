@@ -1360,12 +1360,6 @@ public static void main(String[] args) {
 	
 <details>
 	
-	
-	package com.company;
-
-import java.util.Scanner;
-
-public class Main {
 
     //Toplama işlemi
     static void plus() {
@@ -1553,7 +1547,7 @@ public class Main {
 
     }
 
-}
+
 
 	
 	
