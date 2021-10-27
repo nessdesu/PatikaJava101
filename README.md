@@ -1553,7 +1553,7 @@ public static void main(String[] args) {
 
 ---
 	
-🟢 Pratik 25 - Recursive Method ile Üs Hesabı Yapan Program
+🔵 Ödev 11 - Recursive Method ile Üs Hesabı Yapan Program
 	
 <details>
 	
@@ -1584,7 +1584,7 @@ public static void main(String[] args) {
 	
 ---
 
-🟢 Pratik 26 - Recursive Method ile Asal Sayı Hesabı
+🔵 Ödev 12 - Recursive Method ile Asal Sayı Hesabı
 	
 <details>
 	
@@ -1616,3 +1616,47 @@ public static void main(String[] args) {
 </details>
 	
 ---
+	
+🔵 Ödev 13 - Desene Göre Recursive Method Oluşturma
+	
+<details>
+	
+	 //control ile girilen sayı kontrol edilir. num >0 olacağı için değeri true'dur
+    static int design(int num, boolean control, int flag) {
+        if (control) {
+            //girilen sayı sıfırdan büyükse
+            if (num > 0) {
+                System.out.print(num + " ");
+                //sayacı artır ve sayıdan 5 çıkar
+                flag++;
+                return design(num - 5, true, flag);
+            } else if (num == 0) { //sayı sıfıra eşitse sayacı azalt
+                flag--;
+                return design(num, false, flag);
+            }
+
+        } else {
+            System.out.print(num + " ");
+            //sayac sıfırdan büyük olduğunda sayacı azalt ve sayıya 5 ekle
+            //çünküü seri 0 değerine ulaşıyor ve sayaç artıyor. tekrar girilen numaraya erişene kadar
+            //sayacı azaltıyoruz ve sayıya 5 ekliyoruz.
+            if (flag > 0) {
+                flag--;
+                return design(num + 5, false, flag);
+            } else {
+                return num + 5;
+            }
+        }
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        //flag sayac değişkeni, 0'dan başlamalı
+        Scanner input = new Scanner(System.in);
+        System.out.print("Sayı giriniz: ");
+        int num = input.nextInt();
+        System.out.println(design(num, true, 0));
+    }
+
+	
+</details>
