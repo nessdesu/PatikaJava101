@@ -483,7 +483,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 
 🟢 Pratik 10 - Sayıları Büyükten Küçüğe ve Küçükten Büyüğe Sıralama
 	
-<details
+<details>
 	 
 	 
 	public static void main(String[] args) {
@@ -732,7 +732,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
 	
 <details>
 	
-	 public static void main(String[] args) {
+	public static void main(String[] args) {
         int yil;
 
         Scanner input = new Scanner(System.in);
@@ -1126,7 +1126,7 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
         System.out.print("n2 sayısını giriniz: ");
         int n2 = input.nextInt();
         int ebob = 1, ekok=1;
-        int x = 1, z = 1, y=1;
+        int x = 1, z = 1;
         if(n2 > n1) {
             while (x <= n1) {
                 if (n1 % x == 0 && n2 % x == 0) {
@@ -1144,10 +1144,9 @@ Kodluyoruz / Patika.dev Java101 eğitimleri için açmış olduğum repository.
             }
             System.out.println("EBOB: "+ebob);
         }
-        while (y<= n1*n2){
-            ekok = (n1*n2)/ebob;
-            y++;
-        }
+        
+        ekok = (n1*n2)/ebob;
+        
         System.out.println("EKOK: "+ekok);
 
     }
@@ -1271,7 +1270,7 @@ public static void main(String[] args) {
 	
 ---
 	
-🔵 Ödev 10 - Fibınacci Serisi
+🔵 Ödev 10 - Fibonacci Serisi
 	
 <details>
 	
