@@ -1659,3 +1659,196 @@ public static void main(String[] args) {
 
 	
 </details>
+
+---
+	
+🟢 Pratik 25 - Öğrenci Bilgi Sistemi
+
+<details>
+	
+	🔽 MAIN CLASS
+	<details>
+	
+	public class Main {
+
+    	public static void main(String[] args) {
+
+        Teacher t1 = new Teacher("Mahmut Hoca" , "555", "TRH");
+        Teacher t2 = new Teacher("Nikola Tesla","556", "FZK" );
+        Teacher t3 = new Teacher("Külyutmaz", "553","BIO");
+
+        Course tarih = new Course("TARİH", "101", "TRH");
+        tarih.addTeacher(t1);
+
+        Course fizik = new Course("FİZİK", "102","FZK");
+        fizik.addTeacher(t2);
+
+        Course biyoloji = new Course("Biyoloji", "103","BIO");
+        biyoloji.addTeacher(t3);
+
+        Student s1 = new Student(tarih,fizik,biyoloji, "Jeon Bam","123","4");
+        s1.addBulkExamNote(70,70,50,20, 20, 30);
+        s1.isPass();
+
+    }
+
+}
+	
+	</details>
+	
+	🔽TEACHER CLASS
+	
+	<details>
+	
+	public class Teacher {
+	    String name;
+	    String phoneNumber;
+	    String branch;
+
+	Teacher(String name, String phoneNumber, String branch){
+	    this.name = name;
+	    this.phoneNumber = phoneNumber;
+	    this.branch = branch;
+    }
+
+    	void print(){
+            System.out.println("Adı: " + this.name);
+            System.out.println("Bölümü: " +this.branch);
+            System.out.println("Telefon No: " +this.phoneNumber);
+        
+    }
+}
+
+	
+	</details>
+	
+	🔽 COURSE CLASS
+	<details>
+	
+	   public class Course {
+		 Teacher teacher;
+		 String name;
+		 String code;
+		 String prefix;
+		 double quiz;
+		 double note;
+		 double courseAverage;
+
+	    public Course(String name, String code, String prefix) {
+		this.name = name;
+		this.code = code;
+		this.prefix = prefix;
+		int note = 0;
+		int quiz = 0;
+		double courseAverage = 0.0;
+    }
+
+	    void addTeacher(Teacher teacher) {
+		if (teacher.branch.equals(this.prefix)) {
+		    this.teacher = teacher;
+		    System.out.println("Öğretmen ekleme işlemi başarılı!");
+		} else {
+		    System.out.println("Öğretmen ve ders bölümleri uyuşmuyor!");
+		}
+
+	    }
+
+	    void printTeacherInfo() {
+		this.teacher.print();
+    }
+}
+	
+	</details>
+	
+     🔽 STUDENT CLASS
+	<details>
+	
+		public class Student {
+    Course c1;
+    Course c2;
+    Course c3;
+    Course quiz1;
+    Course quiz2;
+    Course quiz3;
+    Course courseAverage;
+    String name;
+    String stuNo;
+    String classes;
+    double average;
+    boolean isPass;
+
+    Student(Course c1, Course c2, Course c3, String name, String stuNo, String classes) {
+        this.c1 = c1;
+        this.c2 = c2;
+        this.c3 = c3;
+        this.name = name;
+        this.stuNo = stuNo;
+        this.classes = classes;
+        this.average = 0.0;
+        this.isPass = false;
+    }
+
+    void addBulkExamNote(double note1, double note2, double note3, double quiz1, double quiz2, double quiz3) {
+        if (note1 >= 0 && note1 <= 100 && quiz1 >= 0 && quiz1 <= 100) {
+            this.c1.note = (note1 * 0.8);
+            this.c1.quiz = (quiz1 * 0.2);
+            this.c1.courseAverage = (this.c1.note + this.c1.quiz);
+
+        }
+        if (note2 >= 0 && note2 <= 100 && quiz2 >= 0 && quiz2 <= 100) {
+            this.c2.note = (note2 * 0.7);
+            this.c2.quiz = (quiz2 * 0.3);
+            this.c2.courseAverage = (this.c2.note + this.c2.quiz);
+
+        }
+        if (note1 >= 0 && note1 <= 100 && quiz3 >= 0 && quiz3 <= 100) {
+            this.c3.note = (note3 * 0.6);
+            this.c3.quiz = (quiz3 * 0.4);
+            this.c3.courseAverage = (this.c3.note + this.c3.quiz);
+        }
+    }
+
+    void isPass() {
+        if (this.c1.note == 0 || this.c2.note == 0 || this.c3.note == 0) {
+            System.out.println("Notlar tam olarak girilmemiş");
+        } else {
+            this.isPass = isCheckPass();
+            printNote();
+            if (this.isPass) {
+                System.out.println("Sınıfı başarılı şekilde geçtiniz! ");
+            } else {
+                System.out.println("Sınıfta kaldınız! ");
+            }
+
+        }
+    }
+
+    void calcAverage() {
+        this.average = (this.c1.courseAverage + this.c2.courseAverage + this.c3.courseAverage) / 3.0;
+    }
+
+    boolean isCheckPass() {
+        calcAverage();
+        return this.average > 55;
+    }
+
+    void printNote() {
+        System.out.println("*****************");
+        System.out.println("Öğrenci: " + this.name);
+        System.out.println(c1.name + " Notu:\t" + this.c1.note);
+        System.out.println(c2.name + " Notu:\t" + this.c2.note);
+        System.out.println(c3.name + " Notu:\t" + this.c3.note);
+        System.out.println("Tarih Quiz Puanınız:\t" + this.c1.quiz);
+        System.out.println("Fizik Quiz Puanınız:\t" + this.c2.quiz);
+        System.out.println("Biyoloi Quiz Puanınız:\t" + this.c3.quiz);
+        System.out.println("Ortalamanız: " + this.average);
+    }
+
+
+}
+	
+	
+	</details>
+	
+	
+</details>
