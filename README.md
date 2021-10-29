@@ -1667,6 +1667,8 @@ public static void main(String[] args) {
 <details>
 	
 	🔽 MAIN CLASS
+	
+	
 	<details>
 	
 	public class Main {
@@ -1696,7 +1698,12 @@ public static void main(String[] args) {
 	
 	</details>
 	
+	
+	
 	🔽TEACHER CLASS
+	
+	
+	
 	
 	<details>
 	
@@ -1722,7 +1729,13 @@ public static void main(String[] args) {
 	
 	</details>
 	
+	
+	
+	
 	🔽 COURSE CLASS
+	
+	
+	
 	<details>
 	
 	   public class Course {
@@ -1760,32 +1773,37 @@ public static void main(String[] args) {
 	
 	</details>
 	
+	
+	
      🔽 STUDENT CLASS
+	
+	
+	
 	<details>
 	
 		public class Student {
-    Course c1;
-    Course c2;
-    Course c3;
-    Course quiz1;
-    Course quiz2;
-    Course quiz3;
-    Course courseAverage;
-    String name;
-    String stuNo;
-    String classes;
-    double average;
-    boolean isPass;
+		    Course c1;
+		    Course c2;
+		    Course c3;
+		    Course quiz1;
+		    Course quiz2;
+		    Course quiz3;
+		    Course courseAverage;
+		    String name;
+		    String stuNo;
+		    String classes;
+		    double average;
+		    boolean isPass;
 
-    Student(Course c1, Course c2, Course c3, String name, String stuNo, String classes) {
-        this.c1 = c1;
-        this.c2 = c2;
-        this.c3 = c3;
-        this.name = name;
-        this.stuNo = stuNo;
-        this.classes = classes;
-        this.average = 0.0;
-        this.isPass = false;
+	    Student(Course c1, Course c2, Course c3, String name, String stuNo, String classes) {
+		this.c1 = c1;
+		this.c2 = c2;
+		this.c3 = c3;
+		this.name = name;
+		this.stuNo = stuNo;
+		this.classes = classes;
+		this.average = 0.0;
+		this.isPass = false;
     }
 
     void addBulkExamNote(double note1, double note2, double note3, double quiz1, double quiz2, double quiz3) {
