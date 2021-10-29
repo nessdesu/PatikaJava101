@@ -1666,10 +1666,8 @@ public static void main(String[] args) {
 
 <details>
 	
+	
 	🔽 MAIN CLASS
-	
-	
-	<details>
 	
 	public class Main {
 
@@ -1696,16 +1694,12 @@ public static void main(String[] args) {
 
 }
 	
-	</details>
-	
-	
+
+		
 	
 	🔽TEACHER CLASS
 	
 	
-	
-	
-	<details>
 	
 	public class Teacher {
 	    String name;
@@ -1727,16 +1721,12 @@ public static void main(String[] args) {
 }
 
 	
-	</details>
-	
 	
 	
 	
 	🔽 COURSE CLASS
 	
 	
-	
-	<details>
 	
 	   public class Course {
 		 Teacher teacher;
@@ -1771,7 +1761,7 @@ public static void main(String[] args) {
     }
 }
 	
-	</details>
+	
 	
 	
 	
@@ -1779,7 +1769,7 @@ public static void main(String[] args) {
 	
 	
 	
-	<details>
+
 	
 		public class Student {
 		    Course c1;
@@ -1868,5 +1858,3 @@ public static void main(String[] args) {
 	
 	</details>
 	
-	
-</details>
