@@ -1985,7 +1985,109 @@ public static void main(String[] args) {
             return false;
         }
     }
-}
+
 
 	
 </details>
+
+---
+
+🔵 Ödev 14 - Maaş Hesaplayacı
+	
+	❗ Override ettiğimiz toString() metodu stringler ile işlem yaptığı için, içerisinde matematiksel işlemler yapamayız. Bu sebeple 	"Employee" sınıfına 2 adet ek method eklendi. Bunlar "void taxBonus()" ve "void totalSalary() 
+	
+	➡️ taxBonus() methodunda; maaştan vergi tutarı çıkarıldı ve bonus miktarı eklendi
+	➡️ totalSalary() methodunda; taxBonus() methodunda elde ettiğimiz maaş miktarı ile maaş artışı miktarı toplanarak toplam maaş 		bilgisi elde edildi.
+	
+	<details>
+		
+		**MAIN CLASS**
+		
+		public static void main(String[] args) {
+			Employee employee = new Employee("Patika Dev", 2000, 45, 1985);
+			employee.tax();
+			employee.bonus();
+			employee.raiseSalary();
+			employee.taxBonus();
+			employee.totalSalary();
+			System.out.println(employee);
+		    }
+		
+		
+		
+		***EMPLOYEE CLASS***
+		
+		public class Employee {
+		    String name;
+		    double salary;
+		    int workHours;
+		    int hireYear;
+		    double tax;
+		    double bonus;
+		    double raiseSalary;
+		    double taxBonusSalary;
+		    double totalSalary;
+
+	    public Employee(String name, double salary, int workHours, int hireYear) {
+			this.name = name;
+			this.salary = salary;
+			this.workHours = workHours;
+			this.hireYear = hireYear;
+		    }
+
+	    void tax() {
+		if (this.salary > 0 && this.salary < 1000) {
+		    this.tax = 0;
+		}
+		if (this.salary > 1000) {
+		    this.tax = this.salary * 0.03;
+		}
+	    }
+
+	    //çalışma saatine göre maaş
+	    void bonus() {
+		if (this.workHours > 40) {
+		    this.bonus = (this.workHours - 40) * 30;
+		}
+	    }
+
+	    //tecrübeye göre maaş artışı
+		    void raiseSalary() {
+			if ((2021 - this.hireYear) < 10) {
+			    this.raiseSalary = this.salary * 0.05;
+			} else if (2021 - this.hireYear > 9 && 2021 - this.hireYear < 20) {
+			    this.raiseSalary = this.salary * 0.10;
+			} else {
+			    this.raiseSalary = this.salary * 0.15;
+			}
+		    }
+
+	    //Bonuslar eklenip, vergiler çıkarılınca elde edilen maaş
+		    void taxBonus() {
+			this.taxBonusSalary = (this.salary - this.tax) + this.bonus;
+		    }
+
+		    //toplam maaş
+		    void totalSalary() {
+			this.totalSalary = this.taxBonusSalary + this.raiseSalary;
+		    }
+
+	    @Override
+	    public String toString() {
+			return "Adı: " + this.name + " \n"
+				+ "Maaşı: " + this.salary + " \n"
+				+ "Çalışma Saati: " + this.workHours + " \n"
+				+ "Vergi: " + this.tax + " \n"
+				+ "Bonus: " + this.bonus + "\n"
+				+ "Maaş Artışı: " + this.raiseSalary + "\n"
+				+ "Vergi ve Bonuslar ile Birlikte Maaş: " + this.taxBonusSalary + "\n"
+				+ " Toplam Maaş: " + this.totalSalary;
+		    }
+		}
+
+		
+		
+											
+</details>
+	
+---
