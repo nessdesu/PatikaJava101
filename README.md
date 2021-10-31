@@ -1860,7 +1860,7 @@ public static void main(String[] args) {
 	
 ---
 	
-:green Pratik 26 - Boks Oyunu
+🟢 Pratik 26 - Boks Oyunu
 	
 <details>
 	
