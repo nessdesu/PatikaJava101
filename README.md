@@ -1994,15 +1994,17 @@ public static void main(String[] args) {
 
 🔵 Ödev 14 - Maaş Hesaplayacı
 	
+	
+	
+<details>
+		
 ❗ Override ettiğimiz toString() metodu stringler ile işlem yaptığı için, içerisinde matematiksel işlemler yapamayız. Bu sebeple "Employee" sınıfına 2 adet ek method eklendi. Bunlar "void taxBonus()" ve "void totalSalary() 
 
 ➡️ taxBonus() methodunda; maaştan vergi tutarı çıkarıldı ve bonus miktarı eklendi
-➡️ totalSalary() methodunda; taxBonus() methodunda elde ettiğimiz maaş miktarı ile maaş artışı miktarı toplanarak toplam maaş 	bilgisi elde edildi.
+➡️ totalSalary() methodunda; taxBonus() methodunda elde ettiğimiz maaş miktarı ile maaş artışı miktarı toplanarak toplam maaş 	bilgisi elde edildi.	
+
 	
 	
-	
-	<details>
-		
 		**MAIN CLASS**
 		
 		public static void main(String[] args) {
@@ -2087,7 +2089,6 @@ public static void main(String[] args) {
 		    }
 		}
 
-		
 		
 											
 </details>
