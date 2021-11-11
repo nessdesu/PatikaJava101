@@ -2410,4 +2410,71 @@ public static void main(String[] args) {
 	
 	
 </details>
+	
+	
+---
+
+	
+	
+🟢 Pratik 30 - Sayı Tahmin Oyunu
+	
+<details>
+	
+	
+	 public static void main(String[] args) {
+		Random random = new Random();
+		int number = random.nextInt(100);
+		Scanner input = new Scanner(System.in);
+		int right = 0;
+		int selected;
+		int[] wrong = new int[5];
+		boolean isWin = false;
+		boolean isWrong = false;
+
+		//System.out.println(number);
+		while ((right < 5)) {
+		    System.out.print("Enter your guess: ");
+		    selected = input.nextInt();
+
+		    if (selected < 0 || selected > 100) {
+			System.out.println("Please enter a value between 0-100! ");
+			if (isWrong) {
+			    right++;
+			    System.out.println("Invalid enter. Remaining right: " + (5 - right));
+			} else {
+			    isWrong = true;
+			    System.out.println("You will lose enter right if you enter invalid value again.");
+			}
+			continue;
+		    }
+		    if (selected == number) {
+			System.out.println("Congrats! You found the number! The number: " + number);
+			isWin = true;
+			break;
+		    } else {
+			System.out.println("You entered invalid value!");
+			if (selected > number) {
+			    System.out.println(selected + " is bigger than secret number.");
+			} else {
+			    System.out.println(selected + " is smaller than secret number.");
+			}
+			wrong[right++] = selected;
+			System.out.println("Your right: " + (5 - right));
+		    }
+		}
+		if (!isWin) {
+		    System.out.println("Game Over! ");
+		    if (!isWrong) {
+			System.out.println("Your guesses are : " + Arrays.toString(wrong));
+		    }
+		}
+	    }
+
+
+	
+	
+	
+</details>
+	
+	
 ---
