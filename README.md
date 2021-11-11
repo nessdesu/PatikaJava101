@@ -2416,7 +2416,7 @@ public static void main(String[] args) {
 
 	
 	
-🟢 Pratik 30 - Sayı Tahmin Oyunu
+🟢 Pratik 31 - Sayı Tahmin Oyunu
 	
 <details>
 	
