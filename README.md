@@ -2478,3 +2478,33 @@ public static void main(String[] args) {
 	
 	
 ---
+	
+
+🟢 Pratik 32 - Palindromik Kelimeler
+	
+<details>
+	
+	
+	public static String isPalindrome(String str){
+		String reverse = "";
+		for(int i = str.length()-1 ; i >=0; i--){
+		    reverse += str.charAt(i);
+		}
+		if(str.equals(reverse)){
+		    return "String is a palindrome.";
+		}
+		else
+		    return "String is not a palindrome.";
+	    }
+
+        public static void main(String[] args) {
+		String value;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a string: ");
+		value = input.nextLine();
+		System.out.println(isPalindrome(value));
+
+	    }
+	
+
+</details>
