@@ -2508,3 +2508,176 @@ public static void main(String[] args) {
 	
 
 </details>
+
+
+---
+	
+🔴 Mayın Tarlası
+	
+<details>
+	
+	🟥**MAIN**🟥
+	public class Main {
+
+	    public static void main(String[] args) {
+		MineSweeper game = new MineSweeper(4,3);
+	    game.run();
+	    }
+	}
+ 
+	
+	🟥**MineSweeper**🟥
+	
+	public class MineSweeper {
+
+		    int rowNum;
+		    int colNum;
+		    String[][] answerMatrix;
+		    String[][] gameMatrix;
+
+
+		    int mineNum;
+		    int mineCount = 0;
+		    int correctAnswer = 0;
+
+
+		    Scanner input = new Scanner(System.in);
+
+		    public MineSweeper(int rowNum, int colNum) {
+			this.rowNum = rowNum;
+			this.colNum = colNum;
+			this.answerMatrix = new String[rowNum][colNum];
+			this.gameMatrix = new String[rowNum][colNum];
+			this.mineNum = (rowNum * colNum) / 4;
+
+		    }
+
+		    void drawMatrix() {
+			for (int i = 0; i < this.rowNum; i++) {
+			    for (int j = 0; j < this.colNum; j++) {
+				this.gameMatrix[i][j] = " - ";
+				this.answerMatrix[i][j] = " - ";
+			    }
+			}
+		    }
+
+		    void replaceMines() {
+			for (int i = 0; i < this.mineNum; i++) {
+			    double row = Math.random() * this.rowNum;
+			    double col = Math.random() * this.colNum;
+			    if (this.answerMatrix[(int) row][(int) col].equals(" * ")) {
+				i--;
+			    }
+			    this.answerMatrix[(int) row][(int) col] = " * ";
+			}
+		    }
+
+		    void showAnswerMatrix() {
+			System.out.println("ANSWER BOARD FOR ADMIN");
+			for (int i = 0; i < this.rowNum; i++) {
+			    for (int j = 0; j < this.colNum; j++) {
+				System.out.print(this.answerMatrix[i][j]);
+				System.out.print("  ");
+			    }
+			    System.out.println();
+			}
+		    }
+
+		    void showGameMatrix() {
+			System.out.println("I WANT TO PLAY A GAME");
+			for (int i = 0; i < this.rowNum; i++) {
+			    for (int j = 0; j < this.colNum; j++) {
+				System.out.print(this.gameMatrix[i][j]);
+				System.out.print("  ");
+			    }
+			    System.out.println();
+			}
+
+		    }
+
+		    void checkMine() {
+			System.out.println("===============");
+			while (correctAnswer != -1) {
+			    showGameMatrix();
+			    System.out.print("Enter row number: ");
+			    int xRow = input.nextInt();
+			    System.out.print("Enter column number: ");
+			    int yCol = input.nextInt();
+
+			    if (xRow < 0 || yCol < 0 || xRow >= this.rowNum || yCol >= this.colNum) {
+				System.out.println("Please enter a valid value.");
+			    } else {
+				if (answerMatrix[xRow][yCol].equals(" * ")) {
+				    System.out.println("GAME OVER");
+				    correctAnswer = -1;
+				    for (int i = 0; i < answerMatrix.length; i++) {
+					for (int j = 0; j < answerMatrix.length; j++) {
+					    System.out.print(answerMatrix[i][j]);
+					}
+					System.out.println();
+				    }
+				    break;
+				} else {
+				    mineCount = 0;
+				    if ((yCol < this.colNum - 1) && (answerMatrix[xRow][yCol + 1].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((yCol > 0) && (answerMatrix[xRow][yCol - 1].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((xRow < this.rowNum - 1) && (answerMatrix[xRow + 1][yCol].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((xRow > 0) && (answerMatrix[xRow - 1][yCol].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((xRow < this.rowNum - 1) && (yCol < this.colNum - 1) && (answerMatrix[xRow + 1][yCol + 1].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((xRow < this.rowNum - 1) && (yCol > 0) && (answerMatrix[xRow + 1][yCol - 1].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((xRow > 0) && (yCol > 0) && (answerMatrix[xRow - 1][yCol - 1].equals(" * "))) {
+					correctAnswer++;
+				    }
+				    if ((xRow > 0) && (yCol < this.colNum - 1) && (answerMatrix[xRow - 1][yCol + 1].equals(" * "))) {
+					correctAnswer++;
+				    }
+		//                    if (this.gameMatrix[xRow][yCol].equals(" - ")) {
+		//                        this.gameMatrix[xRow][yCol] = "-2";
+		//                    }
+				}
+				mineNum--;
+
+
+				System.out.println("----*----*----");
+				String n = Integer.toString(correctAnswer);
+				gameMatrix[xRow][yCol] = n;
+				for (int i = 0; i < this.gameMatrix.length; i++) {
+				    for (int j = 0; j < this.gameMatrix[i].length; j++) {
+					System.out.print(this.gameMatrix[i][j]);
+				    }
+				    System.out.println();
+				}
+				if (mineNum == 0) {
+				    System.out.println("YOU WON! CONGRATS!");
+				    break;
+				}
+			    }
+			}
+
+		    }
+
+
+		    void run() {
+			drawMatrix();
+			replaceMines();
+			showAnswerMatrix();
+			checkMine();
+
+
+		    }
+
+	
+	
+</details>
